@@ -1,1 +1,35 @@
-Hello
+ {% extends 'base.html.twig' %}   
+{% block body %}
+
+<div class="card" style="width: 18rem;">
+    <img src="image.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Název karty</h5>
+        <p class="card-text">Popis karty s nějakým textem.</p>
+        <a href="#" class="btn btn-primary">Více informací</a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p>Levý sloupec (50% na středních a větších obrazovkách)</p>
+        </div>
+        <div class="col-md-6">
+            <p>Pravý sloupec (50% na středních a větších obrazovkách)</p>
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary">Primární tlačítko</button>
+<button class="btn btn-secondary">Sekundární tlačítko</button>
+<button class="btn btn-success">Úspěch</button>
+<button class="btn btn-danger">Nebezpečí</button>
+<button class="btn btn-warning">Varování</button>
+<button class="btn btn-info">Info</button>
+<button class="btn btn-light">Světlé</button>
+<button class="btn btn-dark">Tmavé</button>
+
+{# Velikosti #}
+<button class="btn btn-primary btn-sm">Malé</button>
+<button class="btn btn-primary">Normální</button>
+<button class="btn btn-primary btn-lg">Velké</button>
+{% endblock %}
